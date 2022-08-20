@@ -1,1 +1,39 @@
+Q1/Write a method that will remove any given character from a String?
+
+#Python Remove Character from String using replace()
+
+s = 'python'
+print(s.replace('n', ''))
+
+-------------------
+Q2/Write a program to find all prime numbers up to a given range
+of numbers?
+
+lower_value = int(input ("Please, Enter the Lowest Range Value: "))  
+upper_value = int(input ("Please, Enter the Upper Range Value: "))  
+  
+print ("The Prime Numbers in the range are: ")  
+for number in range (lower_value, upper_value + 1):  
+    if number > 1:  
+        for i in range (2, number):  
+            if (number % i) == 0:  
+                break  
+        else:  
+            print (number) 
+-------------------
+Q3/write a function that count how many the given character repeated
+in a given string?
+def count(s, c) :
+     
+    res = 0
+     
+    for i in range(len(s)) :
+         
+        if (s[i] == c):
+            res = res + 1
+    return res   
+     
+str= "pythonpython"
+c = 'o'
+print(count(str, c))
 
